@@ -62,7 +62,7 @@ download() {
 	return 1
 }
 
-TOOLS="busybox tor tailscale zerotier copyfail linpeas"
+TOOLS="busybox tor tailscale zerotier nmap copyfail linpeas"
 
 install_one() {
 	subdir="$1"; name="$2"; mode="${3:-755}"
@@ -93,6 +93,7 @@ install_tool() {
 				echo "  also: ./tailscale -> tailscaled-linux-${ARCH}"
 			fi ;;
 		zerotier)  install_one zerotier "zerotier-one-linux-${ARCH}" ;;
+		nmap)      install_one nmap     "nmap-linux-${ARCH}" ;;
 		copyfail)  install_one copyfail "copyfail-linux-${ARCH}" ;;
 		linpeas)   install_one linpeas  "linpeas.sh" ;;
 		*) echo "  unknown tool: $1 (valid: $TOOLS)"; return 2 ;;
@@ -113,8 +114,9 @@ show_menu() {
 	echo "  2) tor"
 	echo "  3) tailscale"
 	echo "  4) zerotier-one"
-	echo "  5) copyfail"
-	echo "  6) linpeas"
+	echo "  5) nmap"
+	echo "  6) copyfail"
+	echo "  7) linpeas"
 	echo
 	echo "  a) change arch (override auto-detect: $ARCH)"
 	echo "  h) help"
@@ -193,8 +195,9 @@ run_menu() {
 			2) install_tool tor ;;
 			3) install_tool tailscale ;;
 			4) install_tool zerotier ;;
-			5) install_tool copyfail ;;
-			6) install_tool linpeas ;;
+			5) install_tool nmap ;;
+			6) install_tool copyfail ;;
+			7) install_tool linpeas ;;
 			a|A) prompt_arch ;;
 			h|H|help|\?) echo; usage ;;
 			q|Q|"") echo; echo "  bye."; exit 0 ;;

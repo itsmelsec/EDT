@@ -10,6 +10,7 @@ their own upstream licenses:
 | tor        | BSD-3-Clause                                      | https://gitlab.torproject.org/tpo/core/tor |
 | tailscale  | BSD-3-Clause                                      | https://github.com/tailscale/tailscale |
 | zerotier   | MPL-2.0 (client / daemon code only)               | https://github.com/zerotier/ZeroTierOne |
+| nmap       | Nmap Public Source License (NPSL, GPL-2 derived)  | https://nmap.org |
 | copyfail   | MIT                                               | https://github.com/badsectorlabs/copyfail-go |
 | linpeas    | GPL-2.0-or-later (with author's clarifications)   | https://github.com/peass-ng/PEASS-ng |
 

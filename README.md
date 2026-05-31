@@ -27,6 +27,7 @@ sh edt.sh help
 - [tor](https://gitlab.torproject.org/tpo/core/tor) — BSD-3-Clause
 - [tailscale](https://github.com/tailscale/tailscale) — BSD-3-Clause
 - [zerotier](https://github.com/zerotier/ZeroTierOne) — MPL-2.0
+- [nmap](https://nmap.org) — Nmap Public Source License (NPSL)
 - [copyfail](https://github.com/badsectorlabs/copyfail-go) — MIT
 - [linpeas](https://github.com/peass-ng/PEASS-ng) — GPL-2.0-or-later
 
